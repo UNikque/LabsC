@@ -24,10 +24,10 @@ int main(int argc, char* argv[])
 	
 	h = (b - a) / N;
 	
-    for(x = a + h ; x < b; x = x + h)
-    {  
+        for(x = a + h ; x < b; x = x + h)
+        {  
 		S = S + F(x);        
-    }
+        }
     
 	S = h * (S + (F(a) + F(b))/2);
 	
