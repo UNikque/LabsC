@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
         
         for (i = 1; i <= n; i++) {
             P = P * 2 * i; 
-		}
+	}
 		
         printf("P = ");
         printf("%d", P);
