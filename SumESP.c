@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     
     do 
     {
-        printf("Input number ESP: \n"); 
+        printf("Input number EPS: \n"); 
     	scanf("%f", &eps);
     
     	if ((eps <= 0) || (eps >= 1)) 
@@ -20,9 +20,9 @@ int main(int argc, char* argv[])
     	}
     } while ((eps <= 0) || (eps >= 1));
     
-    while ( 1.0/x>=eps) 
+    while ( 1.0/x >= eps) 
     {
-        sum=sum+1.0/x;    
+        sum = sum + 1.0/x;    
         x*=2;             
     }
     
