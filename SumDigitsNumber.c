@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <math.h>
 
-/* "There is natural number Ğ. Found sum digits of this number P." */
+/* "There is natural number Ã. Found sum digits of this number P." */
 
 int sum(int P)
 {
-	int s=0;
+    int s=0;
     do 
 	{
         s += (P%10);
