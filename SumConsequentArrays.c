@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-/* "There are sequence of elements ου1, υ2 ... υ. Found the greatest sum consequentive of elements" */
+/* "There are sequence of elements x1, x2 ... x. Found the greatest sum consequentive of elements" */
 
 int main(int argc, char* argv[])
 {      
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 	{
 	    a[i] = c[i] + c[i+1];
 	    if (a[i] > max) 
-		{
+	    {
 		    max = a[i];
 	    }
 	 	printf("%d ", a[i]);
@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
     getch();
     return 0;
 }
-//---------------------------------------------------------------------------
+
 
 
 
