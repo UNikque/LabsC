@@ -4,7 +4,7 @@
 #include <math.h>
 
 /* "Arrays a and b, consisting of N elements.
-Create array ñ, ñ[k]=a[k]+b[k] " */
+Create array c, c[k]=a[k]+b[k] " */
 
 int main(int argc, char* argv[])
 {       
@@ -15,19 +15,19 @@ int main(int argc, char* argv[])
     a[0] = 0;
     b[0] = 0;
     for(k=0; k < n; k++) 
-	{
+    {
         a[k] = a[k-1] + 1;
         printf("%d ", a[k]);
     }
     printf("\n");
     for(k=0; k < n; k++) 
-	{
+    {
         b[k] = b[k-1] + 1;
         printf("%d ", b[k]);
     }
     printf("\n");
     for(k=0; k < n; k++) 
-	{
+    {
         c[k] = a[k] + b[k];
         printf("%d ", c[k]);
     }
