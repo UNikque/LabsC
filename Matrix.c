@@ -1,34 +1,32 @@
-#pragma hdrstop
-#pragma argsused
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <conio.h>
 
- /*"Дана действительная квадратная матрица порядка 2N. Получите новую матрицу: 1  4 " */
-                                                                           //  2  3 
+ /*"Р”Р°РЅР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅР°СЏ РєРІР°РґСЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р° РїРѕСЂСЏРґРєР° 2N. РџРѕР»СѓС‡РёС‚Рµ РЅРѕРІСѓСЋ РјР°С‚СЂРёС†Сѓ 1  4 " */
+                                                                          //  2  3 
 
 int main() {                                                                       
 setlocale(LC_ALL, ".1251");   
 srand(time(NULL));        
         int N, i, j, keep;
         
-        printf("Введите размерность N матрицы:\n");
+        printf("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ N РјР°С‚СЂРёС†С‹:\n");
         scanf("%d", &N);
         
-		int A[2*N][2*N];
+	int A[2*N][2*N];
 		   
- 		printf("Первоначальная матрица\n");
-	    for(i=0;i<2*N;i++){
-            for(j=0;j<2*N;j++) {
-                A[i][j]=rand() % 9 + 1;	
-                printf("%d  ",A[i][j]);
-            }
-            printf("\n");
-   		}
+ 	printf("РџРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅР°СЏ РјР°С‚СЂРёС†Р°\n");
+	for(i=0;i<2*N;i++){
+        	for(j=0;j<2*N;j++){
+               		A[i][j]=rand() % 9 + 1;	
+                	printf("%d  ",A[i][j]);
+            	}
+        	printf("\n");
+  	}
            
-        printf("\nПолученная матрица\n");
+        printf("\nРџРѕР»СѓС‡РµРЅРЅР°СЏ РјР°С‚СЂРёС†Р°\n");
         
         for(i=0;i<N;i++){
              for(j=0;j<N;j++){
@@ -37,14 +35,14 @@ srand(time(NULL));
         	    A[i+N][j+N]=A[i+N][j];
         	    A[i+N][j]=keep;
             }
-   		}	
+   	}	
    	   	
      	for(i=0;i<2*N;i++){
             for(j=0;j<2*N;j++){
                 printf("%d  ",A[i][j]);
             }
             printf("\n");
-   		}
+   	}
  
 getchar();
 return 0;
