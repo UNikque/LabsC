@@ -7,10 +7,11 @@
 #include <conio.h>
 #include <windows.h>
 #include <ctype.h>
-/* "The program replaces in text all CAPTAL Latin letters on lower..." */
+/* "The program replaces in text all CAPITAL Latin letters on lower..." */
 
  
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) 
+{
  setlocale(LC_ALL, ".1251");
  int i=0;
  char s[100];
